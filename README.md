@@ -16,7 +16,7 @@ The main test cases are in Seera.js , while test data containig 2 origin i.e. 'f
 The other two files with in the Pages sub-folder contains the POM for flight search and flight book pages.
 
 
-To execute just run the scripts from Cypress UI.
+To execute just run the scripts from Cypress UI. Alternatively you can go the folder and execute command `npx cypress run --spec "cypress/integration/Seera.js"`
 
 
 # First TC
