@@ -41,7 +41,7 @@ describe('Book Fight', function() {
     })
   
   
-	it('Search Flight, Sorting and Form Validations', function() {
+	it('Search Flight and Sorting', function() {
     cy.viewport(1440,1200)
     cy.visit('https://www.tajawal.com/en')
 	
