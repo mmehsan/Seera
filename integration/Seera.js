@@ -2,7 +2,7 @@ import FlightPage from './pages/flightPage';
 import BookFlightPage from './pages/BookFlightPage';
 
 describe('Book Fight', function() {
-  xit('Search Flight, Stop Filters and Form Validations', function() {
+  it('Search Flight, Stop Filters and Form Validations', function() {
     cy.viewport(1440,1200)
     cy.visit('https://www.tajawal.com/en')
 	
@@ -68,8 +68,19 @@ describe('Book Fight', function() {
 	cy.get('.sc-fkyLDJ').eq(0).click({force: true })
 	cy.get('.sc-gipzik').click({force: true })
 	
-	var price = cy.get('[data-testid=FlightSearchResult__Itinerary1__PriceLabel]').invoke('text')
+	
+	
+	var price 
+	cy.get('[data-testid=FlightSearchResult__Itinerary1__PriceLabel]').invoke('text').then((text) => {
+    
+	price = text
 	cy.log(price)
+	
+	cy.get('.sc-kcbnda > span').eq(0).contains(price)
+	
+	cy.get('.sc-kcbnda > span').eq(0).should('contain', price)
+	});
+
 	
     })
 	
