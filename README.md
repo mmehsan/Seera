@@ -2,13 +2,13 @@
 
 This consists of 4 files
 
-  ### i.    \integration\Seera.js 
+  * i.    \integration\Seera.js 
   
-  ### ii.   \fixtures\cities.JSON
+  * ii.   \fixtures\cities.JSON
   
-  ### iii.  \integration\pages\flightPage.js
+  * iii.  \integration\pages\flightPage.js
   
-  ### iv.   \integration\pages\BooKFlightPage.js
+  * iv.   \integration\pages\BooKFlightPage.js
   
   
 # File Contents
